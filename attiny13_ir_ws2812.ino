@@ -13,7 +13,7 @@
 #include <avr/interrupt.h>
 #include "light_ws2812.c"
 
-#define  PIXEL_NUM (7) //number of ws2812 led
+#define  PIXEL_NUM (7) //number of ws2812 leds
 
 #define IR_Input_Pin PORTB1
 
@@ -43,7 +43,7 @@ int main(void) {
             color(255,2,20); //color when the corresponding button is pressed [GRB]
         }
         if (IR_Code(0xDB24F00F)) {
-            color(255,2,20);
+            color(20,255,20);
         }
         //add more if conditions depending on your use
 
